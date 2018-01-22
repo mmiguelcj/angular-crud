@@ -1,0 +1,24 @@
+<form #dadosForm="ngForm" (ngSubmit)="onSubmit(dadosForm)">
+  <div class="row">
+    <div class="input-field col s12">
+      <input name="first_name" type="text" [ngModel]="user.firstName" required>
+      <label class="active" for="first_name">First Name</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input name="last_name" type="text" [ngModel]="user.lastName">
+      <label class="active" for="last_name">Last Name</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input name="email" placeholder="nome@email.com" type="email" [ngModel]="user.email" required>
+      <label class="active" for="first_name2" >Email</label>
+    </div>
+  </div>
+  <button type="reset" [routerLink]="['/user', user.id]" class="btn waves-effect waves-light red lighten-2" >Voltar
+  </button>
+  <button class="btn waves-effect waves-light" type="submit" name="action">Salvar
+  </button>
+</form>

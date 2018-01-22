@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col s12 center">
+    <div class="card red lighten-2">
+      <div class="card-content white-text">
+        <span class="card-title">{{ user?.firstName }} {{ user?.lastName }}</span>
+        <p>Email: {{user?.email}}</p>
+      </div>
+      <div class="card-action">
+        <a class="waves-effect waves-light btn red"
+        (click)="userDelete()">Apagar</a>
+        
+        <a class="waves-effect waves-light btn"
+          (click)="userEdit()">Editar</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

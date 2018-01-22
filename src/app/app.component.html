@@ -1,3 +1,15 @@
-<h1>
-  {{title}}
-</h1>
+<nav>
+  <div class="nav-wrapper">
+    <a routerLink="home" class="brand-logo right">CRUD</a>
+    <ul id="nav-mobile" class="left">
+      <li routerLinkActive="active"><a routerLink="/home"> Home </a></li>
+      <li routerLinkActive="active"><a routerLink="/new"> Add User </a></li>
+      <li routerLinkActive="active"><a routerLink="/users"> List Users </a></li>
+    </ul>
+  </div>
+</nav>  
+
+
+<div class="container">
+        <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,11 @@
+<div *ngIf="users.length > 0" class="collection">
+  <a class="collection-item" 
+  *ngFor="let user of users"
+  [routerLink]="['/user',user.id]"> {{ user.firstName }} {{ user.lastName }}</a>
+</div>
+
+<div *ngIf="users.length == 0" class="row">
+  <div class="s12 red lighten-2 center">
+      Empty list.
+  </div>
+</div>
